@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Children's Day</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, pink, lightyellow);
+            text-align:center;
+        }
+
+        .container{
+            margin-top:100px;
+        }
+
+        h1{
+            color:red;
+            font-size:50px;
+        }
+
+        p{
+            font-size:25px;
+            color:#333;
+        }
+
+        .heart{
+            font-size:80px;
+            color:red;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+            100%{transform: scale(1);}
+        }
+
+        button{
+            padding:12px 25px;
+            font-size:20px;
+            background:red;
+            color:white;
+            border:none;
+            border-radius:10px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heart">❤️</div>
+
+        <h1>Happy Children's Day</h1>
+
+        <p>
+            Thank you children for your love, care and support.<br>
+            You are the best!
+        </p>
+
+        <button onclick="showMessage()">
+            Click Here
+        </button>
+    </div>
+
+    <script>
+        function showMessage(){
+            alert("Happy Children's Day ❤️");
+        }
+    </script>
+
+</body>
+</html>
